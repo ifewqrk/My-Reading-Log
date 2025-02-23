@@ -1,3 +1,4 @@
+/* 전체 페이지 스타일 */
 body {
     font-family: Arial, sans-serif; /* 전체 페이지의 폰트 스타일 지정 */
     margin: 0;
@@ -6,42 +7,44 @@ body {
     text-align: center; /* 제목을 중앙 정렬 */
 }
 
-h1 {
+h1, h2, h3 {
     color: #333; /* 제목의 색상 지정 */
-    text-align: left; /* 제목을 중앙 정렬 */
+    text-align: left; /* 제목을 왼쪽 정렬 */
 }
 
+/* 각 제목의 색상 */
 h2 {
-    color: #07289f; /* 제목의 색상 지정 */
-    text-align: left; /* 제목을 중앙 정렬 */
-}
-h3 {
-    color: #2d0369; /* 제목의 색상 지정 */
-    text-align: left; /* 제목을 중앙 정렬 */
+    color: #07289f;
 }
 
+h3 {
+    color: #2d0369;
+}
+
+/* 문단 스타일 */
 p {
     font-size: 16px; /* 문단의 폰트 크기 지정 */
     color: #666; /* 문단의 색상 지정 */
     line-height: 1.2; /* 문단의 줄 간격 지정 */
     margin: 10px; /* 문단 주위 여백 지정 */
-    text-align: left; /* 제목을 중앙 정렬 */
+    text-align: left; /* 문단을 왼쪽 정렬 */
 }
 
+/* 링크 스타일 */
 a {
     color: #000; /* 링크의 색상 지정 */
     text-decoration: none; /* 링크의 밑줄 제거 */
-    text-align: center; /* 제목을 중앙 정렬 */
+    text-align: center; /* 링크를 중앙 정렬 */
 }
 a:hover {
     color: blue; /* 마우스 오버 시 링크 색상 변경 */
-    text-align: center; /* 제목을 중앙 정렬 */
 }
 
+/* 목록 스타일 */
 ul {
     list-style: none; /* 목록의 스타일 없애기 */
     padding: 0;
-    text-align: left; /* 제목을 중앙 정렬 */
+    text-align: left; /* 목록을 왼쪽 정렬 */
 }
 
 li {
@@ -49,22 +52,27 @@ li {
     margin-bottom: 5px; /* 목록 항목 사이의 여백 지정 */
     padding: 5px; /* 목록 항목 내부 여백 지정 */
     border: 1px solid #ddd; /* 목록 항목 테두리 지정 */
-    text-align: left; /* 제목을 중앙 정렬 */
-}
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 320px;
+    text-align: left; /* 목록 항목을 왼쪽 정렬 */
 }
 
+/* 이미지 스타일 */
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 320px;
+}
+
+/* div 박스 스타일 */
 div {
     margin: 20px; /* div 주위 여백 지정 */
     padding: 20px; /* div 내부 여백 지정 */
     background-color: yellow; /* 배경색 지정 */
     border: 1px solid #ddd; /* 테두리 지정 */
-    text-align: center; /* 제목을 중앙 정렬 */
+    text-align: center; /* div 내 텍스트 중앙 정렬 */
 }
+
+/* 버튼 스타일 */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -77,7 +85,31 @@ div {
     font-size: 16px;
 }
 
+/* 버튼 호버 시 색 변화 */
 .button:hover {
     background-color: #eeee08;
 }
 
+/* 감상평 박스 스타일 */
+.review-box {
+    background: #fff;
+    border: 2px solid #8A2BE2; /* 보라색 박스 테두리 */
+    border-radius: 12px; /* 둥근 모서리 */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    text-align: center;
+    padding: 15px 25px;
+    margin: 10px 0;
+    width: 200px; /* 박스 넓이 */
+    transition: all 0.3s ease;
+}
+
+/* 감상평 박스를 호버할 때 강조 효과 */
+.review-box:hover {
+    background-color: #8A2BE2; /* 보라색 배경 */
+    color: white; /* 텍스트 색상 변경 */
+    transform: scale(1.05); /* 크기 살짝 증가 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 그림자 강화 */
+}
